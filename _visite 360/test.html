@@ -146,7 +146,6 @@
 			//changemant de texture
 			function ChangeTexture()
 			{
-				renderer.deallocateTexture( mesh.material.map );
 				mesh.material.map = THREE.ImageUtils.loadTexture( sourceImages[sourceIndex++] );
 				mesh.material.needsUpdate = true;
 				if(sourceIndex==sourceImages.length)
